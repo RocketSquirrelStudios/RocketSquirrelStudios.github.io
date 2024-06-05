@@ -1,0 +1,119 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body
+{
+  background-color: #000;
+}
+
+img, video
+{
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules for header */
+header
+{
+  top: 0;
+  background-color: #000;
+}
+
+header img
+{
+  margin: 0 auto;
+}
+
+/* Style rules for hamburger area */
+
+.mobile nav a {
+  color: #fff;
+  font-family: 'Francois One', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.menu.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Show mobile class, hide tablet-desktop class*/
+.mobile
+{
+  display: block;
+}
+.tablet-desktop, #menu-links
+{
+  display: none;
+}
+
+/* Style rules for main content */
+main
+{
+  background-color: #fff;
+  padding: 20px;
+  font-size: 1.15em;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Style rules for footer content */
+footer .copyright
+{
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  padding: 2% 4%;
+  float: left;
+  width: 100%;
+}
+
+footer p a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+.social {
+  float: right;
+  width: 20%;
+  padding: 2%;
+}
+
+.social img {
+  display: inline-block;
+  padding: 5%;
+}
+
+/* Media query for Tablet Viewport */
+@media screen and (min-width: 630px), print
+{
+  /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
+  .tablet-desktop 
+  {
+    display: block;
+  }
+
+  .mobile, .mobile-nav
+  {
+    display: none;
+  }
+}
