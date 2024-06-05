@@ -1,3 +1,9 @@
+/*  OB2027 - Rich Black :: Borders, Text?
+    4C7A99 - Steel Blue - Header/Footer Background
+    E7ECEF - Anti-Flash White - Body/Content Background
+    886176 - Chinese Violet - ??? Accents
+    A18276 - Beaver (Brown) - ??? Accents */
+
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video
 {
@@ -9,7 +15,7 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 /* Style rules for body and images */
 body
 {
-  background-color: #000;
+  background-color: #4C7A99;
 }
 
 img, video
@@ -29,18 +35,16 @@ img, video
 header
 {
   top: 0;
-  background-color: #000;
 }
 
-header img
-{
-  margin: 0 auto;
+/* Style rules for mobile nav hamburger area */
+
+.mobile-nav {
+    min-height: 100px;
 }
 
-/* Style rules for hamburger area */
-
-.mobile nav a {
-  color: #fff;
+.mobile-nav a {
+  color: #0B2027;
   font-family: 'Francois One', sans-serif;
   text-align: center;
   font-size: 2em;
@@ -49,28 +53,33 @@ header img
   display: block;
 }
 
-.mobile-nav a.menu.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    width: 15%;
+    right: 0px;
+    padding-right: 15%;
+  }
 
 /* Show mobile class, hide tablet-desktop class*/
-.mobile
-{
-  display: block;
-}
-.tablet-desktop, #menu-links
-{
-  display: none;
+@media screen and (max-device-width: 767px), print
+{ 
+    .mobile, .mobile-nav
+    {
+        display: block;
+    }
+    .tablet-desktop, #menu-links
+    {
+        display: none;
+    }
 }
 
 /* Style rules for main content */
 main
 {
-  background-color: #fff;
+  background-color: #E7ECEF;
   padding: 20px;
+  color: #0B2027;
   font-size: 1.15em;
   font-family: 'Roboto Slab', serif;
 }
@@ -92,28 +101,55 @@ footer p a
   text-decoration: none;
 }
 
-.social {
-  float: right;
-  width: 20%;
-  padding: 2%;
-}
-
-.social img {
-  display: inline-block;
-  padding: 5%;
-}
-
 /* Media query for Tablet Viewport */
-@media screen and (min-width: 630px), print
+@media screen and (min-device-width: 768px), print
 {
-  /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
-  .tablet-desktop 
-  {
-    display: block;
-  }
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop 
+    {
+        display: block;
+    }
 
-  .mobile, .mobile-nav
-  {
-    display: none;
-  }
+    .mobile, .mobile-nav
+    {
+        display: none;
+    }
+
+    /* Nav */
+    nav
+    {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        min-height: 20px;
+    }
+
+    nav ul
+    {
+        width:100%;
+        text-align: center;
+    }
+
+    nav li
+    {
+        border: none;
+        width:17.5%;
+        padding:10px 1%;
+        display: inline-block;
+    }
+    nav li a
+    {
+        color: #E7ECEF;
+        text-decoration: none;
+    }
+
+    nav li:hover {
+        background-color: #E7ECEF;
+    }
+
+    nav li:hover a {
+        color: #0B2027;
+        background-color: #E7ECEF;
+    }
 }
