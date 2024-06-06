@@ -153,3 +153,79 @@ footer p a
         background-color: #E7ECEF;
     }
 }
+
+/* HomePage */
+
+/* About */
+.main-content
+{
+  width:75%;
+}
+
+.what-do p
+{
+  margin: 0 auto;
+  padding: 10px;
+  width: 90%;
+  border: 2.5px solid #A18276;
+  border-radius: 25px;
+}
+
+.member-slate
+{
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 150px;
+  width: 75%;
+  border-radius: 25px;
+}
+
+.member-slate #picture
+{
+  /* find a way to keep 1-to-1; should be a square */
+  position:absolute;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border: 5px solid #886176;
+}
+
+.reveal
+{
+  position:absolute;
+  margin-left: 150px;
+  padding: 5px;
+  width:80%;
+  height:150px;
+}
+
+.reveal #cover
+{
+  width: 75%;
+  padding: 5px;
+  background-color:#A18276;
+}
+
+.reveal #info-reveal
+{
+  width: 75%;
+  padding: 5px;
+  background-color:#886176;
+  display: none;
+}
+
+.reveal #title
+{
+  font-size: 18pt;
+  font-weight: 5pt; /* BOLD IT AHHHH */
+}
+
+.reveal:hover #cover
+{
+  display: none;
+}
+
+.reveal:hover #info-reveal
+{
+  display: block;
+}
