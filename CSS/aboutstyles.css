@@ -1,0 +1,88 @@
+/* About */
+.main-content
+{
+  width:75%;
+}
+
+.what-do p
+{
+  margin: 10px;
+  padding: 10px;
+  width: 90%;
+  border: 2.5px solid #A18276;
+  border-radius: 25px;
+}
+
+.cat-title
+{
+  width: 90%;
+  
+  height: min-content;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: -10px;
+  padding-left: 20px;
+}
+
+.cat-title:hover
+{
+    background-color: rgba(166, 169, 171, 0.25);
+}
+
+.member-slate
+{
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 150px;
+  width: 90%;
+  border-radius: 25px;
+}
+
+.member-slate #picture
+{
+  /* find a way to keep 1-to-1; should be a square */
+  position:absolute;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border: 5px solid #886176;
+}
+
+
+.reveal
+{
+  margin-left: 150px;
+  padding: 5px;
+  width:100%;
+  height:150px;
+}
+
+.reveal #cover
+{
+  width: 80%;
+  padding: 5px;
+}
+
+.reveal #info-reveal
+{
+  width: 80%;
+  padding: 5px;
+  background-color: rgba(166, 169, 171, 0.25);
+  display: none;
+}
+
+.reveal #title
+{
+  font-size: 18pt;
+  font-weight: 5pt; /* BOLD IT AHHHH */
+}
+
+.reveal:hover #cover
+{
+  display: none;
+}
+
+.reveal:hover #info-reveal
+{
+  display: block;
+}
