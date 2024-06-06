@@ -11,3 +11,14 @@ function hamburger() {
       /* logo.style.display = "none"; */
     }
   }
+
+
+  function category() {
+    var cat = document.getElementById("category");
+  
+    if (cat.style.display === "block") {
+      cat.style.display = "none";
+    } else {
+      cat.style.display = "block";
+    }
+  }
