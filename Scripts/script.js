@@ -1,3 +1,4 @@
+
 //Hamburger menu function
 function hamburger() {
     var menu = document.getElementById("menu-links");
@@ -14,7 +15,7 @@ function hamburger() {
 
 
   function category() {
-    var cat = document.getElementById("category");
+    var cat = document.querySelector;
   
     if (cat.style.display === "block") {
       cat.style.display = "none";
@@ -22,3 +23,22 @@ function hamburger() {
       cat.style.display = "block";
     }
   }
+
+  var scrollstart = 0;
+
+  function pagescroll(){
+    var scrollvalue = document.body.scrollTop;
+    const l_reel = document.querySelector("#l_reel");
+    const r_reel = document.querySelector("#r_reel");
+
+    l_reel.style.transform = "translateY(" + scrollvalue + "px)";
+    r_reel.style.transform = "translateY(-" + scrollvalue + "px)";
+
+    scrollstart = scrollvalue;
+  }
+
+
+
+
+  
+  

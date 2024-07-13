@@ -9,6 +9,10 @@
 
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <!-- Google Fonts Here -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 
         <!-- Replace Icon Refs -->
         <!-- <link rel="shortcut icon" href="images/favicon.ico">
@@ -17,73 +21,146 @@
         <link rel="icon" sizes="192x192" href="images/android-chrome-192.png"> -->
     </head>
 
-    <body>
-        <div id="container">
-            <header>
-                <!-- Add Image Constant//Scroll down into bar? IDK -->
-            </header>
+    <body onscroll="pagescroll()">
+        <div>
 
-            <!-- Mobile Nav -->
-        <nav class="mobile-nav">
-            <a class="menu-icon" id="menu-icon" onclick="hamburger()">
-                <div>&#9776;</div>
-            </a>
-            <div id="menu-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="previous.html">Previous Works</a>
-                <a href="contact.html">Contact Us</a>
+            <div class="desktop_reels">
+                <div class="scroll_reel" id="l_reel">
+                    <img src="https://placehold.co/175x1500">
+                </div>
+                <div class="scroll_reel" id="r_reel">
+                    <img src="https://placehold.co/175x1500">
+                </div>
             </div>
-        </nav>
 
-        <!-- Desktop Nav !! USE STICKY POSITION IN CSS AAA TY-->
-            <nav class="tablet-desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="previous.html">Previous Works</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
+            <header>
+                <h1>Rocket Squirrel Studios</h1>
+
+                <nav class="global-nav">
+                    <a class="menu-icon" id="menu-icon" onclick="hamburger()">
+                        <div>&#9776;</div>
+                    </a>
+                    <div id="menu-links">
+                        <a href="#bannerext">Home</a>
+                        <a href="#who-we">Who We Are</a>
+                        <a href="#about-us">About Us</a>
+                        <a href="#our-process">Our Process</a>
+                        <a href="#our-latest">Our Latest</a>
+                        <a href="#contact-us">Contact Us</a>
+                    </div>
+                </nav>
+            </header>
         </div>
 
-        <div id="container">
+        <div class="body_cont">
+
             <main>
-                <div class="mobile">
-                    <!-- Mobile-Exclusive Content -->
-                    <p>Just Testing Mobile Main Content</p>
-                </div>
-
-                <div class="tablet-desktop">
-                    <!-- Desktop-Exclusive Content -->
-                    <p>Just Testing Desktop Main Content</p>
-                </div>
-
+                
                 <div class="primary-content">
-                    <div id="banner">
-                        <!-- Slideshow Preview for Recent Works/Promotionals -->
-                        <!-- Should take up 75% of full screen-->
-                        <p>Primary Content Box</p>
+                    <div class="bannerext" id="bannerext">
+                        <div id="bannerint">
+                            <img src="Images/rsstesting01_full.png">
+                        </div>
+                    </div>
+                    <div class="quote"><h1>All the world's a stage, and all </h1>
+                        <h1>the men and women merely players.</h1>
+                        <h1>They have their exits and their entrances;</h1> 
+                        <h1>And one man in his time plays many parts.”</h1>
+                        <div id="reference"><p>- William Shakespeare</p></div>
                     </div>
 
-                    <div class="who-we">
-                        <!-- Static Displays For Most Popular Works -->
-                        <!-- Smaller, takes 37% of full screen -->
-                        <p>Who We Are</p>
+                    <hr class="spacer">
+                        
+                    <div class="who-we" id="who-we">
+                        <h1>Who We Are</h1>
+                        <div>
+                            <div class="who-we-top">
+                                <div class="who_container">
+                                    <div class="who_video">
+                                        <div class="who_hover"><h3>Video</h3><div id="hover_img"><img src="Images/hovertesting_full.png"></div></div>
+                                        <div class="who_scroller">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                    </div>
+                                </div>
+                                <div class="who_container">
+                                    <div class="who_anim">
+                                        <div class="who_hover"><h3>Animation</h3><div id="hover_img"><img src="Images/hovertesting_full.png"></div></div>
+                                        <div class="who_scroller">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="who-we-bottom">
+                                <div class="who_container">
+                                    <div class="who_prod">
+                                        <div class="who_hover"><h3>Production</h3><div id="hover_img"><img src="Images/hovertesting_full.png"></div></div>
+                                        <div class="who_scroller">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Etiam non quam lacus suspendisse faucibus. Viverra orci sagittis eu volutpat odio facilisis mauris sit. A pellentesque sit amet porttitor eget dolor morbi non arcu. Nec ultrices dui sapien eget mi proin sed. Leo duis ut diam quam nulla porttitor massa. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Sed viverra ipsum nunc aliquet bibendum. At volutpat diam ut venenatis tellus. Eget aliquet nibh praesent tristique magna. Ornare aenean euismod elementum nisi. Libero nunc consequat interdum varius sit amet mattis. <br><br> Vitae purus faucibus ornare suspendisse. Et malesuada fames ac turpis egestas. In nulla posuere sollicitudin aliquam ultrices sagittis. Dictum sit amet justo donec enim diam. Neque convallis a cras semper auctor neque vitae. Turpis egestas pretium aenean pharetra magna. Pellentesque habitant morbi tristique senectus et. Justo laoreet sit amet cursus sit amet. Dolor sit amet consectetur adipiscing elit. Id consectetur purus ut faucibus pulvinar elementum integer. Ultrices dui sapien eget mi proin sed.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                        
+                    <hr class="spacer" id="about-us">
+                    
                     <div class="about-us">
-                        <p>About Us</p>
+                        <iframe class="about_vid" src="https://www.youtube.com/embed/xNYmI7z3k-8?si=7KBoOwkesdDoMc0j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div id=about_desc><h1>About Us</h1></div>
                     </div>
-                    <div class="our-process">
-                        <p>Our Process</p>
+                    <div class="photo-bar">
+                        <div id="bar_left"></div>
+                        <div id="bar_center"></div>
+                        <div id="bar_right"></div>
                     </div>
+                    
+                    <hr class="spacer" id="our-process">
+                    
+                    <div class="process_hover">
+                        <div class="our-process">
+                            <div class="process_text">
+                                <div id="process_title"><h1>Our Process</h1></div>
+                                <div id="process_desc">See More Here!</div>
+                            </div>
+                            <div class="process_reel"></div>
+                        </div>
+                    </div>
+                    
+                    <hr class="spacer" id="our-latest">
+
                     <div class="our-latest">
-                        <p>Our Latest</p>
+                        <h1>Our Latest</h1>
+                        <div class="latest_report">
+                            <img src="https://placehold.co/250x250">
+                            <div id="report_brief"><h3>Title</h3>
+                            <p>Article By: Cool Person</p>
+                            <p>Decent Descriptive; Small Paragraph.</p>
+                        </div>
+                        </div>
                     </div>
+
+                    <hr class="spacer" id="contact-us">
+
                     <div class="contact-us">
-                        <p>Contact Us</p>
+                        <h1>Contact Us</h1>
+                        <p>Want small paragraph about the CEO here? Or just some basic "Questions, concerns, or consultation? Reach out to us HERE!"</p>
+                        <form action="https://formsubmit.co/lanetevi@mailgolem.com" method="POST" autocomplete="off">
+                        <!-- Contact Form Start -->
+                            <h2>Quick Contact</h2>
+                            <fieldset>
+                                <legend>Contact Info</legend>
+                                <label for="fName">Name</label>
+                                <input type="text" id="Name" name="name" placeholder="First Last" required>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="required@email.com" required>
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Optional">
+                            </fieldset>
+                            <fieldset class="msg">
+                                <legend>Your Message</legend>
+                                <input type="text" name="subject" placeholder="Subject Line" required>
+                                <textarea id="message" name="message" rows="5" cols="35" placeholder="Write your message here!" required></textarea>
+                            </fieldset>
+                            <!-- <input type="hidden" name="_next" value="#thanks"> -->
+                            <input type="submit" id="submit" value="Submit" class="btn">
+                        </form>
                     </div>
                 </div>
             </main>
@@ -91,17 +168,24 @@
             <footer>
                 <div class="copyright">
                     <div class="link-index">
-                        <p>Link Index</p>
+                        <a href="#bannerext">Home</a> || 
+                        <a href="#who-we">Who We Are</a> || 
+                        <a href="#about-us">About Us</a> || 
+                        <a href="#our-process">Our Process</a> || 
+                        <a href="#our-latest">Our Latest</a> || 
+                        <a href="#contact-us">Contact Us</a>
                     </div>
                     <div class="Socials">
                         <!-- Socials -->
                         <p>Socials</p>
+                        <a>YouTube</a> <a>TikTok</a> <a>Twitter?</a>
                     </div>
                     <p>&copy; Copyright 2024. All Rights Reserved.</p>
                 </div>
             </footer>
+        
         </div>
-
+        
         <script src="Scripts/script.js"></script>
 
     </body>
